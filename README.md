@@ -21,16 +21,18 @@ My main focus will be on the store's CMS, Content Management System, and seamles
 <br>
 
 ## High-Level Design
-#### Frontend
-The user interface is built using Shadcn UI, Tailwind CSS, and React.
+#### E-Commerce Integration
+The Admin dashboard serves as the centralized backend for the entire e-commerce store, integrating CMS (Content Management System), administrative functionalities, and API routes.
+This seamless integration ensures efficient management and smooth operation of the e-commerce platform.
 
-#### Backend
-Powered by Node.js, the backend supports the business logic, data management, and API endpoints.
+#### Vendor Management
+The dashboard empowers multiple vendors, automatically generating dedicated API routes for each vendor. This dynamic feature allows for comprehensive vendor control and individualized storefront management. 
 
-#### Database
-Prisma in conjunction with MySQL is used for data storage. The database stores products, categories, vendors, stores, and more.
+#### Data Storage
+Prisma, working in tandem with MySQL, serves as the backbone for storing and managing critical data, including product and store details. 
+This database system allows for seamless Create, Read, Update, and Delete (CRUD) operations through the admin site, providing administrators with comprehensive control.
 
-#### Payment Processing
+#### End-to-End Payment Processing
 Stripe handles payment transactions, offering convenience for both administrators and customers.
 
 #### Deployment
