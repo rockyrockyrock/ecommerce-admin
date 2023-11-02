@@ -25,15 +25,23 @@ My main focus will be on the store's CMS, Content Management System, and seamles
 The Admin dashboard serves as the centralized backend for the entire e-commerce store, integrating CMS (Content Management System), administrative functionalities, and API routes.
 This seamless integration ensures efficient management and smooth operation of the e-commerce platform.
 
+<br>
+
 #### Vendor Management
 The dashboard empowers multiple vendors, automatically generating dedicated API routes for each vendor. This dynamic feature allows for comprehensive vendor control and individualized storefront management. 
+
+<br>
 
 #### Data Storage
 Prisma, working in tandem with MySQL, serves as the backbone for storing and managing critical data, including product and store details. 
 This database system allows for seamless Create, Read, Update, and Delete (CRUD) operations through the admin site, providing administrators with comprehensive control.
 
+<br>
+
 #### End-to-End Payment Processing
 Stripe handles payment transactions, offering convenience for both administrators and customers.
+
+<br>
 
 #### Deployment
 The frontend and backend are hosted on Vercel and are built with Next.js 13.
