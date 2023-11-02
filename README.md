@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ecommerce-admin (E-Commerce Admin Dashboard)
+#### This is a 2-fold project, please visit ecommerce-store GitHub page for your reference.
 
-## Getting Started
+<br>
 
-First, run the development server:
+## Introduction
+The document provides an overview of the admin dashboard and its high-level design.
+This admin dashboard is designed to streamline the management of multiple vendors and stores, offering an efficient solution for e-commerce operations.
+With a user-friendly interface, the admin has control over products, categories, orders, and integrated payment processing via Stripe.
+My main focus will be on the store's CMS, Content Management System, and seamless auto-generated API endpoints for the store.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Objective
+- Vendor and Store Management: A central hub for users to create multiple stores.
+- Content Management: Administrators can manage the store content, including products, images, categories, and billboards.
+- Order Tracking: Users can manage the sales process and track the orders.
+- Dashboard: Provide users insights with graphical representations of revenue and sales data.
+- Authentication and Payment Processing: Implement Clerk Authentication, while Stripe integration handles secure payment processing.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## High-Level Design
+#### Frontend
+The user interface is built using Shadcn UI, Tailwind CSS, and React.
 
-## Learn More
+#### Backend
+Powered by Node.js, the backend supports the business logic, data management, and API endpoints.
 
-To learn more about Next.js, take a look at the following resources:
+#### Database
+Prisma in conjunction with MySQL is used for data storage. The database stores products, categories, vendors, stores, and more.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Payment Processing
+Stripe handles payment transactions, offering convenience for both administrators and customers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Deployment
+The frontend and backend are hosted on Vercel and are built with Next.js 13.
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Reference
+References can be found on Next.js Docs. (https://nextjs.org/docs)
